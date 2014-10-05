@@ -72,7 +72,7 @@ Rails.application.configure do
   config.active_support.deprecation = :notify
   
   # ActionMailer Config
-   config.action_mailer.default_url_options = { :host => 'sevenpoints-timecard.herokuapp.com'}
+   config.action_mailer.default_url_options = { :host => ENV['GMAIL_DOMAIN']}
    config.action_mailer.delivery_method = :smtp
    config.action_mailer.perform_deliveries = true
    config.action_mailer.raise_delivery_errors = true
