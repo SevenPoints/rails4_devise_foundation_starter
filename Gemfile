@@ -17,6 +17,7 @@ gem 'foundation-rails'
 gem 'simple_form'
 gem 'unicorn'
 gem 'unicorn-rails'
+gem 'figaro','~>1.0.0'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_20]
