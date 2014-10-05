@@ -81,11 +81,10 @@ Rails.application.configure do
     password: ENV["GMAIL_PASSWORD"]
   }
   # ActionMailer Config
-  config.action_mailer.default_url_options = { :host => Rails.application.secrets.domain_name }
+  config.action_mailer.default_url_options = { :host => 'sevenpoints-timecard.herokuapp.com'}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
-
 
   # Disable automatic flushing of the log to improve performance.
   # config.autoflush_log = false
